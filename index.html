@@ -36,8 +36,17 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur obcaecati deleniti fugit necessitatibus, doloremque voluptates totam pariatur voluptatum debitis, maxime libero. Necessitatibus atque amet esse laborum facilis, consequatur nobis provident.</p>
 
 <h2 id="id_contact">Contact</h2>
-<form action="index.html" method="post">    
-    <textarea placeholder="Please enter your recomandations/problems..." id="contact_form"></textarea>
+<form action="index.html" method="post" id = "contact_form">
+    <labelfor "name"> Nom : </label><br>
+        <input type="text" id="name" name="name" placeholder="Votre Nom" required><br><br>
+    <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" placeholder="Votre email" required><br><br>
+    <label for="phone">Téléphone :</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone"><br><br>
+    <label for="message">Message :</label><br>
+        <textarea id="message" name="message" placeholder="Votre message..." rows="4" required></textarea><br><br>
+        <input type="submit" value="Envoyer">
+    <textarea placeholder="Please enter your recomandations/problems..." id="contact_form"></textarea> -----> on peut enlever ça
     <br>
     <input type="submit" value="Submit">
 </form>
