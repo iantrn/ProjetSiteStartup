@@ -1,1 +1,1 @@
-Ceci est un site web présentant notre nouvelle startup : RecyTech
+Ceci est un site web présentant notre nouvelle startup : RecyTechProject
