@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+
+
+.navbar {
+    background-color: #D9D9D9;
+    overflow: hidden;
+    
+}
+    .navbar a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+    .navbar a:hover {
+    background-color: #D9D9D9;
+    color: black;
+  }
+  
+
+    .navbar a.index {
+    background-color: #04AA6D;
+    color: black;
+  }
+
+
+
