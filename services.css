@@ -9,7 +9,7 @@ body {
   background-color: #D9D9D9;
   position: relative;
   top: 0;
-  z-index: 10;
+  z-index: 10;     /* La navbar est prioritaire sur les autre éléments */
   padding: 0; 
 }
 
