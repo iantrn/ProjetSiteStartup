@@ -51,7 +51,7 @@ body {
 }
 
 .about-section h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .team-member h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 10px 0;
 }
@@ -110,13 +110,13 @@ body {
 }
 
 .about-details h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #333;
   margin-top: 20px;
 }
 
 .about-details p {
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 15px;
   text-align: justify;
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .about-details ul li {
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 10px;
 
 }
