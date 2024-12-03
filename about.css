@@ -52,7 +52,6 @@ body {
 
 .about-section h1 {
   font-size: 2.5rem;
-  color: #333;
   margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -81,9 +80,10 @@ body {
 }
 
 .team-member p {
-  font-size: 1rem;
+  font-size: 0.8em;
   color: #555;
   line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .profile-picture {
@@ -101,17 +101,17 @@ body {
   padding: 20px;
   margin: 20px auto;
   max-width: 900px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.8;
   color: #333;
 }
 
 .about-details h3 {
   font-size: 1.5rem;
-  color: #2c3e50;
+  color: #333;
   margin-top: 20px;
 }
 
@@ -130,7 +130,7 @@ body {
 .about-details ul li {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #555;
+
 }
 
 
