@@ -42,28 +42,16 @@ body {
       top: 0;
   }
 }
-
 .content {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.content h1 {
-  margin-bottom: 20px;
-}
+
 .content p {
   font-size: 1.25em;
-  color: #555;
+
 }
-
-
-
-
-
-
-
-
-
 
 .footer {
   background-color: #D9D9D9; 
