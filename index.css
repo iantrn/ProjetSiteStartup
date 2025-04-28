@@ -65,3 +65,8 @@ body {
 .footer a {
   color: #04AA6D;  
 }
+#logo{
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
