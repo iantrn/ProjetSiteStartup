@@ -77,17 +77,6 @@ body {
 
 /* Loader */
 
-* {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-:root {
-	--fg: hsl(223,10%,10%);
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
-}
-
 .wheel-and-hamster {
 	--dur: 1s;
 	position: relative;
