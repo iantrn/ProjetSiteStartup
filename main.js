@@ -15,8 +15,15 @@ function main () {
             document.querySelector("#duration").innerHTML = "Temps passé sur la page " + time_spent + " secondes"; 
     }, 1000);
     }
+    function Loader() {
+
+    }
+    function pageSwitch() { // fonction intermédiaire pour éxectuer plusieurs fonctions en même temps sur un changement de page
+        durationOnPage();
+        Loader();
+    }
     let page_switch = document.getElementsByClassName("navbar");
-    page_switch.onclick = durationOnPage(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
+    page_switch.onclick = pageSwitch(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
     
 
 
