@@ -5,13 +5,40 @@ function main () {
     }
     document.addEventListener("copy", onCopy); // envoit une alerte + message console si l'utilisateur copie quelque chose
     function displayTime() {
-        document.querySelector("#timer").innerHTML = new Date().toLocaleTimeString("fr-fr");  // on écrit l'heure récupérée
+        document.querySelector("#timer").innerHTML = "Il est actuellement " + new Date().toLocaleTimeString("fr-fr");  // on écrit l'heure récupérée
     }
     setInterval(displayTime,1000); // on rafraichi l'heure toutes les secondes
-    function durationOnPage() {
-        let time_spent = 0;
-        while ()
+    function durationOnPage() { // calcul du temps passé sur la page et affichage à l'écran
+        let time_spent = 0;        
+        setInterval(function() {
+            time_spent++;
+            document.querySelector("#duration").innerHTML = "Temps passé sur la page " + time_spent + " secondes"; 
+    }, 1000);
     }
+    let page_switch = document.getElementsByClassName("navbar");
+    page_switch.onclick = durationOnPage(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
+    
+
+
+
+
+
+    const logo = document.getElementById("logo");
+    logo.addEventListener("mouseover",() => {
+        logo.style.transform = "scale(2)";
+    } );
+
+    logo.addEventListener("mouseout", () =>{
+        logo.style.transform  = "scale(1)";
+    })
+
+    logo.addEventListener("click", () =>{
+        window.location.href = "index.html"
+    });
+
+
+ 
+
 }
 
 
