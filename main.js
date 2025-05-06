@@ -16,19 +16,17 @@ function main () {
     }, 1000);
     }
     function Loader() {
-
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";   // Affiche le loader 2 secondes
+          }, 2000);
     }
     function pageSwitch() { // fonction intermédiaire pour éxectuer plusieurs fonctions en même temps sur un changement de page
-        durationOnPage();
         Loader();
+        durationOnPage();
     }
     let page_switch = document.getElementsByClassName("navbar");
     page_switch.onclick = pageSwitch(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
     
-
-
-
-
 
     const logo = document.getElementById("logo");
     logo.addEventListener("mouseover",() => {
@@ -42,12 +40,6 @@ function main () {
     logo.addEventListener("click", () =>{
         window.location.href = "index.html"
     });
-
-
- 
-
 }
-
-
 main();
 
