@@ -25,6 +25,7 @@ function main () {
         durationOnPage();
     }
     let page_switch = document.getElementsByClassName("navbar");
+    let team_page_switch = document.getElementsByClassName("about");
     page_switch.onclick = pageSwitch(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
     
 
