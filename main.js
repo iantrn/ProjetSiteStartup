@@ -49,10 +49,10 @@ function main() {
     function callSupport(event) {
         event.preventDefault();
         let confirmation = prompt("Si vous voulez appeler ce numéro : +33230130560, entrez le de nouveau dans le champ ci-dessous puis validez")
-        if ( confirmation == null || confirmation == "") {
+        if ( confirmation == null || confirmation == "") { 
             console.log("Call canceled");
         }
-        else if ( confirmation.trim() !== "33230130560") {
+        else if ( confirmation.trim() !== "33230130560") {  // on vérifie que l'utilisateur rentre bien un numéro
             alert("Numéro incorrect");
         }
         else {
@@ -60,7 +60,7 @@ function main() {
             const audio = new Audio('image/totally_spies_ringtone.mp3'); 
             audio.play();
             setTimeout(() => {
-                audio.pause();
+                audio.pause();  // on met la sonnerie 5 secondes
                 audio.currentTime = 0;
             }, 5000);
         }
