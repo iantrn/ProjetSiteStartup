@@ -45,6 +45,28 @@ function main() {
     }
     let about = document.getElementById("about");   
     about.addEventListener("click", alertTeam);     // on attend le clique sur le bouton A Propos
+    
+    function callSupport(event) {
+        event.preventDefault();
+        let confirmation = prompt("Si vous voulez appeler ce numéro : +33230130560, entrez le de nouveau dans le champ ci-dessous puis validez")
+        if ( confirmation == null || confirmation == "") {
+            console.log("Call canceled");
+        }
+        else if ( confirmation.trim() !== "33230130560") {
+            alert("Numéro incorrect");
+        }
+        else {
+            console.log("Vous appelez le numéro : +" + confirmation);
+            const audio = new Audio('ringtone.mp3'); 
+            audio.play();
+            setTimeout(() => {
+                audio.pause();
+                audio.currentTime = 0;
+            }, 5000);
+        }
+    }
+    let phone_number = document.getElementById("phone_number");
+    phone_number.addEventListener("copy", callSupport);
 
     const logo = document.getElementById("logo");
     logo.addEventListener("mouseover", () => {
@@ -67,6 +89,20 @@ function main() {
         canvas.width = canvas.offsetWidth;
         canvas.hie;
     });
+
+    const scratch_containers = document.querySelectorAll('.scratch-container');
+
+scratch_containers.forEach((container) => {
+    const canvas = container.querySelector('.scratch-canvas');
+    container.addEventListener('mouseenter', () => {
+        canvas.style.opacity = '1';
+    });
+    container.addEventListener('mouseleave', () => {
+        canvas.style.opacity = '0';
+    });
+});
+
+
 }
 
 main();
