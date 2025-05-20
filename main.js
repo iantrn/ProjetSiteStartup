@@ -25,7 +25,7 @@ function main () {
         durationOnPage();
     }
     let page_switch = document.getElementsByClassName("navbar");
-    let team_page_switch = document.getElementsByClassName("about");
+
     page_switch.onclick = pageSwitch(); // quand on clique sur un bouton de la navbar on change de page et donc le timer de page se remet à zéro
     
 
@@ -41,6 +41,16 @@ function main () {
     logo.addEventListener("click", () =>{
         window.location.href = "index.html"
     });
+
+
+    document.addEventListener("Domcontenloaded", ()=>{const canvases = document .querySelectorAll(".scratch-canvas")});
+    canvases.forEach(canvas => {
+        const dessin  = canvas.getContext("2d");
+        canvas.width = canvas.offsetWidth;
+        canvas.hie
+        
+    });
 }
+
 main();
 
