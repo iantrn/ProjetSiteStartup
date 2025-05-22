@@ -47,7 +47,7 @@ function main() {
     about.addEventListener("click", alertTeam);     // on attend le clique sur le bouton A Propos
     
     function callSupport(event) {
-        event.preventDefault();
+        event.preventDefault();  // on empeche l'execution automatique de la fonction avant la confirmation
         let confirmation = prompt("Si vous voulez appeler ce numéro : +33230130560, entrez le de nouveau dans le champ ci-dessous puis validez")
         if ( confirmation == null || confirmation == "") { 
             console.log("Call canceled");
@@ -57,7 +57,7 @@ function main() {
         }
         else {
             console.log("Vous appelez le numéro : +" + confirmation);
-            const audio = new Audio('image/totally_spies_ringtone.mp3'); 
+            const audio = new Audio('totally_spies_ringtone.mp3'); 
             audio.play();
             setTimeout(() => {
                 audio.pause();  // on met la sonnerie 5 secondes
@@ -66,7 +66,7 @@ function main() {
         }
     }
     let phone_number = document.getElementById("phone_number");
-    phone_number.addEventListener("copy", callSupport);
+    phone_number.addEventListener("copy", callSupport);     // on attend que l'utilisateur copie le numéro
 
     const logo = document.getElementById("logo");
     logo.addEventListener("mouseover", () => {
