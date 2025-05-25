@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="stylesheet" href="services.css">
+    <script src="main.js" defer></script>
+
 </head>
 <body>
-    
+ 
+<div class="navbar">
+  <a href="index.html" class="index">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="about.html" id="about">À propos</a>
+  <div id="navbar_right">
+    <a href="contact.html">Contactez Nous</a>
+  </div>
+</div>
+
+<br><br>
+<h1>Produits & services</h1>
+
+<div class="services-container">
+  <div class="service-item">
+    <img src="image/download.png" alt="Eco-Sensor Pro" class="image">
+    <div class="text-content">
+      <p class="caption" id="prize1">149,99€</p>
+      <p class="text">L'Eco-Sensor Pro est une machine intelligente de nouvelle génération, conçue pour optimiser le tri des matériaux grâce à des technologies de pointe. 
+        <br>Équipée de capteurs avancés, cette machine est capable de reconnaître et d'identifier avec précision une large gamme de matériaux, qu'il s'agisse de métaux, plastiques, papiers ou composites.
+
+        <br>Dotée d'un système d'intelligence artificielle, l'Eco-Sensor Pro apprend et s'adapte en permanence pour améliorer son efficacité et s'ajuster aux nouvelles exigences environnementales. Sa conception modulaire et ergonomique facilite son intégration dans différents environnements industriels, centres de recyclage, ou collectivités.
+        </p>
+    </div>
+  </div>
+  <br><br>
+  <div class="service-item reverse">
+    <div class="text-content">
+      <p class="caption" id="prize2">99,99€</p>
+      <p class="text">TriSense est une solution révolutionnaire dédiée à la gestion des déchets, capable de scanner et de trier en temps réel. 
+        <br>Grâce à une technologie de détection avancée combinée à l'intelligence artificielle, TriSense identifie instantanément les types de déchets, qu'il s'agisse de plastiques, métaux, verres, papiers ou organiques.
+
+       <br> Doté de capteurs multispectraux et d'un algorithme intelligent, TriSense analyse chaque déchet dès son introduction dans le système. Sa capacité à trier en temps réel garantit une précision inégalée, réduisant les erreurs de tri et augmentant la qualité des matériaux recyclés.
+        
+        <br>Compact et polyvalent, TriSense peut être utilisé dans divers contextes, notamment les centres de tri, les entreprises ou même les foyers soucieux de leur empreinte écologique. 
+    </div>
+    <img src="image/download (1).png" alt="TriSense" class="image">
+  </div>
+  <br><br>
+  <div class="service-item">
+    <img src="image/conseil_startup.png" alt="SmartRecycle" class="image">
+    <div class="text-content">
+      <p class="text">RecyTech propose un service de conseil en matière de recyclage et tri des déchets, appuyé par les dernières innovations en intelligence artificielle.
+  <br>
+        Grâce à notre expertise, nous analysons vos besoins spécifiques et vous proposons des solutions adaptées pour améliorer vos pratiques de gestion des déchets. Notre technologie d'IA permet de :</p>
+        <ul>
+          <li>Identifier rapidement les matériaux recyclables.</li>
+          <li> Optimiser les processus de tri pour maximiser l'efficacité.</li>
+          <li>Former vos équipes aux bonnes pratiques de tri et de recyclage.</li>
+        </ul>
+      
+      <p class="text">
+        Que vous soyez une entreprise, une collectivité ou un particulier soucieux de réduire votre empreinte écologique, notre service de conseil vous accompagne dans chaque étape de votre démarche, avec des recommandations personnalisées et concrètes.
+      </p>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<p> <strong id="timer"></strong></p>
+<p> <strong id ="duration"></strong></p>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div id="loader" class="loader-container">
+  <div class="wheel-and-hamster" role="img" aria-label="Orange and tan hamster running in a metal wheel">
+	  <div class="wheel"></div>
+	  <div class="hamster">
+		  <div class="hamster__body">
+			  <div class="hamster__head">
+				  <div class="hamster__ear"></div>
+				  <div class="hamster__eye"></div>
+				  <div class="hamster__nose"></div>
+			  </div>
+			  <div class="hamster__limb hamster__limb--fr"></div>
+			  <div class="hamster__limb hamster__limb--fl"></div>
+			  <div class="hamster__limb hamster__limb--br"></div>
+			  <div class="hamster__limb hamster__limb--bl"></div>
+			  <div class="hamster__tail"></div>
+		  </div>
+	  </div>
+	  <div class="spoke"></div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+      <p>&copy; 2024 RecyTech. Tous droits réservés. | <a href="https://isen-nantes.fr/mentions-legales/">Mentions légales</a> | <a href="https://isen-nantes.fr/politique-de-confidentialite/">Politique de confidentialité</a> | Contactez-nous: <a id="phone_number">+33 2 30 13 05 60</a> | Adresse: Av. du Champ de Manœuvre, 44470 Carquefou</p> 
+</footer>
 </body>
 </html>
