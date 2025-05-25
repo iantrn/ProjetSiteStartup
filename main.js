@@ -145,7 +145,7 @@ function main() {
     form.addEventListener('submit', sendForm);  // on attend que l'utilisateur envoi le formulaire
 
 
-    
+// Accueil    
     const logo = document.getElementById("logo");
     logo.addEventListener("mouseover", () => {
         logo.style.transform = "scale(2)";
