@@ -132,7 +132,7 @@ function main() {
     }
 
     name.addEventListener('input', updateSubmitButton);
-    email.addEventListener('input', updateSubmitButton);    // on regarde à chauqe input si les conditions sont remplies pour envyer le formulaire
+    email.addEventListener('input', updateSubmitButton);    // on regarde à chaque input si les conditions sont remplies pour envyer le formulaire
     message.addEventListener('input', updateSubmitButton);
 
     function sendForm(event) { 
