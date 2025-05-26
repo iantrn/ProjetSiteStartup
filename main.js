@@ -159,39 +159,9 @@ function main() {
         window.location.href = "index.html";
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const canvas = document.querySelector(".scratch-canvas");
-    const ctx = canvas.getContext("2d");
+    
 
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-
-    ctx.fillStyle = "#BBBBBB";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    let isDrawing = false;
-
-    canvas.addEventListener("mousedown", () => {
-        isDrawing = true;
-    });
-
-    canvas.addEventListener("mouseup", () => {
-        isDrawing = false;
-    });
-
-    canvas.addEventListener("mousemove", (event) => {
-        if (!isDrawing) return;
-
-        const rect = canvas.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-
-        ctx.globalCompositeOperation = "destination-out";
-        ctx.beginPath();
-        ctx.arc(x, y, 20, 0, Math.PI * 2);
-        ctx.fill();
-    });
-});
+  
 
 
 
