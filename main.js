@@ -159,48 +159,7 @@ function main() {
         window.location.href = "index.html";
     });
 
-    document.querySelectorAll('.scratch-container').forEach(container => {
-  const canvas = container.querySelector('.scratch-canvas');
-  const ctx = canvas.getContext('2d');
-
-  // Ajuster la taille du canvas (important)
-  const width = canvas.width = container.offsetWidth;
-  const height = canvas.height = container.offsetHeight;
-
-  // Remplir le canvas avec une couleur opaque
-  ctx.fillStyle = 'rgba(0,0,0,0.6)';
-  ctx.fillRect(0, 0, width, height);
-
-  // Paramètres pour grattage
-  const radius = 20; // taille du pinceau
-
-  // Fonction grattage
-  function scratch(x, y) {
-    ctx.globalCompositeOperation = 'destination-out'; // enlève la couleur sur zone grattée
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-    ctx.fill();
-  }
-
-  // Gestion des événements souris et tactile
-  let isDrawing = false;
-
-  canvas.addEventListener('mousedown', e => {
-    isDrawing = true;
-    scratch(e.offsetX, e.offsetY);
-  });
-
-  canvas.addEventListener('mousemove', e => {
-    if (!isDrawing) return;
-    scratch(e.offsetX, e.offsetY);
-  });
-
-  window.addEventListener('mouseup', () => {
-    isDrawing = false;
-  });
-
-});  // <-- cette accolade et parenthèse ferment forEach et sa fonction fléchée
-
+    
     
 }
 main();
